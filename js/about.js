@@ -14,6 +14,6 @@ _.each(buttons_and_divs_and_name, function(bdn){
     shownBtn = $(bdn[0])
     shown.addClass("shown")
     shownBtn.addClass("selected_item")
-    window.history.pushState(null, $(bdn[0]).attr('id'), '/'+$(bdn[0]).attr('id')+".html");
+    window.history.pushState(null, $(bdn[0]).attr('id'), $(bdn[0]).attr('id')+".html");
   })
 })

@@ -1,0 +1,294 @@
+---
+---
+
+@import "bootstrap-customized";
+
+body{
+  // background-color: #000;
+  font-size: 16px;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+a{
+  cursor: pointer;
+}
+
+.header-top-spaceHolder{
+  height: 150px //to be set by javascript later
+}
+
+.header-top-wrapper,.header-top-behind-bg{
+  z-index: 10;
+  width:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  -ms-transition: all 250ms ease-in;
+  -o-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  background-color: #fff;
+}
+
+.header-top-behind-bg{
+  height:80px
+}
+
+
+.header-top{
+  padding: 30px 0;
+  position: relative;
+  .logo img{
+    height:90px
+  }
+  .home{
+    line-height: 100px
+  }
+  .selected{
+    border-bottom: 2px solid #333 !important
+  }
+  .nav{
+    line-height: 48px;
+    margin-top:-10px;
+    .mainMenu{
+    a{
+      margin:0 20px;
+      padding:5px;
+      font-size: 16px;
+      z-index: 10;
+      border-bottom: 2px solid #fff;
+    }
+    a:hover{
+        border-bottom: 2px solid #ddd !important
+    }
+    }
+    .subMenu1,.subMenu2{
+      margin-top: 2px;
+        a{
+          margin:0 14px;
+          font-size: 15px;
+          opacity: 0.5
+        };
+        .selected_item{
+          opacity: 1 !important
+        };
+        a:hover{
+          border-bottom: 2px solid #fff !important;
+          opacity: 0.8 !important
+        }
+    }
+    .subMenu1{
+      margin-left: 6px
+    }
+    .subMenu2{
+      margin-left: 156px
+    }
+  }
+}
+
+.small-logo{
+  position: fixed;
+  top:0;
+  width: 100%;
+  top:10px;
+  left:0px;
+  z-index: 9;
+  img{
+    height:60px;
+    margin:auto;
+    opacity: 0;
+    display: block;
+    }
+}
+
+.header-bottom{
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom:50px;
+  z-index: 4;
+  position: relative;
+  color: #555;
+  a{
+    color: #3498db;
+  }
+  .tagline-special{
+    color: #53ade3
+  }
+}
+
+
+
+.featuredImage{
+  background-color:#111;
+  height:500px;
+  overflow: hidden;
+  position:relative;
+  img{
+    margin-top: -200px;
+    min-width:1500px;
+    position: absolute;
+    right: 0%;
+    top:0
+  }
+}
+
+.darkOverlay{
+  background-color: rgba(10,10,20,0.7);
+}
+
+.overlay{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%
+}
+
+.overlayWords{
+  color:#fff;
+  text-align: center;
+  height: 500px;
+  .overlayWords1,.overlayWords2{
+
+  }
+}
+
+.flex-center-vertically {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.clear{
+  clear: both;
+}
+
+.session1, .session2{
+  .btn{
+    margin: 25px;
+    @media (max-width: 1000px) {
+      display: block
+    }
+  }
+ }
+
+ .container{
+   padding-left: 0;
+ }
+
+ .aboutSession{
+   margin-top: 30px;
+   margin-bottom: 100px;
+   h2,h3{
+     margin-top: 50px
+   }
+   a{
+     color:#3498db;
+   }
+ }
+
+ .Patua{
+    font-family: 'Patua One', 'Times',  cursive;
+ }
+
+ .metalTechniques{
+
+   .metalTechnique{
+     display: inline-block;
+     text-align: center;
+     width:24%
+   }
+ }
+ .fans .metalTechnique{
+   width:32% !important
+ }
+
+.metalList{
+   div{
+     padding:20px;
+     text-transform: uppercase;
+     padding-left: 0;
+     img{
+       margin-right: 20px
+     }
+   }
+}
+.facilities{
+div{
+  display: inline-block;
+  text-align: center;
+    margin: 0 auto;
+  margin-top: 20px;
+  width:88%;
+  padding:20px;
+  font-size: 20px;
+  border: 4px solid #333
+}
+}
+
+.finishing{
+  .content{
+    width:50%;
+    display: inline-block;
+    vertical-align:top;
+    margin-top: 80px;
+    h2{
+      margin-top: 0;
+    }
+  }
+  img{
+    margin-left: 30px;
+    width: 30%;
+    margin-top: 80px;
+    vertical-align:top;
+  }
+}
+
+
+.aboutSession{
+  display: none
+}
+
+.shown{
+  display: block !important
+}
+
+.address{
+  padding-left: 115px;
+  padding-right: 115px;
+  margin-top: 0px !important
+}
+
+.slider_image{
+  width:300px;
+  height: 180px;
+  overflow: hidden;
+  margin:0 auto;
+  img{
+    width: 100%;
+  }
+}
+
+.slider-wrapper{
+  padding-bottom: 20px;
+  width:330px;
+  margin:0 auto;
+  margin-top:50px;
+  color:#555;
+  .bx-wrapper{
+      margin-bottom: 14px !important
+  }
+  .bx-viewport{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    width:320px !important;
+    height: 200px !important;
+  }
+  span{
+    cursor: pointer;
+    font-size: 0.8em
+  }
+}

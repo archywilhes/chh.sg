@@ -1,0 +1,49 @@
+<div class="header jumbotron">
+  <div class="container header-top-spaceHolder">
+  </div>
+  <div class="header-top-wrapper">
+  <div class="container header-top">
+      <div style="z-index:5" class="logo pull-left">
+        <a href="/" style="z-index:5">
+        <img src="img/chh.png" class="animated logoImage">
+      </a>
+      </div>
+      <div class="nav nav-pills pull-right">
+          <div>
+          <div class="mainMenu {% if page.isHome %}home{% endif %}">
+          <a class="{% if layout.isAboutPage1 %}selected{% endif %}" href="about.html">Our Services</a>
+          <a class="{% if layout.isAboutPage2 %}selected{% endif %}" href="industrial-fans-and-silencers.html">Our Industrial Fans & Silencers</a>
+          <a class="contactButton">Contact Us</a>
+          </div>
+          {% if layout.isAboutPage1 %}
+          <div class="subMenu1 subMenu">
+          <a class="{% if page.title == "Service" %} selected_item {% endif %}" id="about">About</a>
+          <a class="{% if page.title == "Materials" %} selected_item {% endif %}" id="materials">Material List</a>
+          <a class="{% if page.title == "Finishing" %} selected_item {% endif %}" id="finishing">Finishing</a>
+          <a class="{% if page.title == "Facilities" %} selected_item {% endif %}" id="facilities">Facilities</a>
+          </div>
+          {% elsif layout.isAboutPage2 %}
+          <div class="subMenu2 subMenu">
+          <a class="{% if page.title == "Casing" %} selected_item {% endif %}" id="industrial-fans-and-silencers">Casing</a>
+          <a class="{% if page.title == "Assembling" %} selected_item {% endif %}" id="assembling">Assembling</a>
+          <a class="{% if page.title == "Silencers" %} selected_item {% endif %}" id="silencers">Silencers</a>
+          <a class="{% if page.title == "Cleaning" %} selected_item {% endif %}" id="cleaning">Cleaning</a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="clear"></div>
+</div>
+</div>
+<div class="small-logo">
+  <img src="img/chh.png" class="animated smallLogoImage">
+</div>
+<div class="container header-bottom">
+        <h2 class="tagline">
+          We Specialise in Metal Fabrication. <br/>Manufacuturing <a href="industrial-fans-and-silencers.html">Industrial Fans</a> and <a href="industrial-fans-and-silencers.html">Silencers</a>
+        </h2>
+        <h3 class="tagline-special">
+          since 1988
+        </h3>
+  </div>
+</div>
